@@ -17,19 +17,19 @@ export default function SimulationControls() {
     <div className="flex flex-col gap-4 p-5 rounded-2xl bg-slate-900/90 backdrop-blur-xl border border-slate-700 shadow-2xl w-72">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Activity size={18} className="text-blue-400" />
+          <Activity size={15} className="text-blue-400" />
           <span className="text-sm font-bold text-white">Simulation</span>
         </div>
         <button
           onClick={() => setSimulation(!isSimulating)}
           className={cn(
-            "p-2.5 rounded-lg transition-all duration-200",
+            "p-2 rounded-lg transition-all duration-200",
             isSimulating
               ? "bg-red-500/20 text-red-400 hover:bg-red-500/30"
               : "bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30"
           )}
         >
-          {isSimulating ? <Pause size={18} /> : <Play size={18} />}
+          {isSimulating ? <Pause size={15} /> : <Play size={15} />}
         </button>
       </div>
 

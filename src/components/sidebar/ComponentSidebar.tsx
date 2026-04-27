@@ -46,7 +46,7 @@ export default function ComponentSidebar() {
     <div className="w-80 h-full bg-slate-900/50 backdrop-blur-xl border-r border-slate-800 p-6 flex flex-col gap-6 overflow-y-auto">
       <div>
         <h1 className="text-2xl font-bold text-white mb-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-          System Designer
+          SysDesign
         </h1>
         <p className="text-xs text-slate-400">
           Drag components to build your architecture
@@ -69,8 +69,8 @@ export default function ComponentSidebar() {
                     onDragStart={(e) => onDragStart(e, comp)}
                     className="group flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-800/40 cursor-grab active:cursor-grabbing hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-200"
                   >
-                    <div className="p-2 rounded-lg bg-slate-900 text-blue-400 group-hover:text-blue-300 transition-colors">
-                      <Icon size={18} />
+                    <div className="p-1.5 rounded-lg bg-slate-900 text-blue-400 group-hover:text-blue-300 transition-colors">
+                      <Icon size={15} />
                     </div>
                     <div className="flex flex-col">
                       <span className="text-sm font-medium text-slate-200 group-hover:text-white">
@@ -101,8 +101,8 @@ export default function ComponentSidebar() {
                   onDragStart={(e) => onDragStart(e, comp)}
                   className="group flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-800/40 cursor-grab active:cursor-grabbing hover:border-purple-500/50 hover:bg-purple-500/10 transition-all duration-200"
                 >
-                  <div className="p-2 rounded-lg bg-slate-900 text-purple-400 group-hover:text-purple-300 transition-colors">
-                    <Icon size={18} />
+                  <div className="p-1.5 rounded-lg bg-slate-900 text-purple-400 group-hover:text-purple-300 transition-colors">
+                    <Icon size={15} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-slate-200 group-hover:text-white">

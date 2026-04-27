@@ -8,15 +8,19 @@ const TrafficEdge = ({
   id,
   sourceX,
   sourceY,
+  sourcePosition,
   targetX,
   targetY,
+  targetPosition,
   data,
 }: EdgeProps & { data?: { traffic: number } }) => {
   const [edgePath] = getBezierPath({
     sourceX,
     sourceY,
+    sourcePosition,
     targetX,
     targetY,
+    targetPosition,
   });
 
   const traffic = data?.traffic || 0;
