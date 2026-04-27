@@ -84,18 +84,18 @@ const SystemNode = ({ data, selected }: SystemNodeProps) => {
     >
       <Handle
         type="target"
-        position={Position.Top}
-        className="w-3 h-3 bg-slate-400 border-2 border-slate-900 rounded-full"
+        position={Position.Left}
+        className="!w-3 !h-3 !bg-slate-500 !border-2 !border-slate-900 !rounded-full hover:!bg-blue-400"
       />
 
       <div className="flex flex-col items-center gap-2">
         <div
           className={cn(
-            "p-2.5 rounded-lg transition-all duration-500 text-white",
+            "p-2 rounded-lg transition-all duration-500 text-white",
             getStatusColor(data.status)
           )}
         >
-          <Icon size={22} />
+          <Icon size={18} />
         </div>
 
         <div className="text-sm font-semibold text-slate-100">{data.label}</div>
@@ -121,8 +121,8 @@ const SystemNode = ({ data, selected }: SystemNodeProps) => {
 
       <Handle
         type="source"
-        position={Position.Bottom}
-        className="w-3 h-3 bg-slate-400 border-2 border-slate-900 rounded-full"
+        position={Position.Right}
+        className="!w-3 !h-3 !bg-slate-500 !border-2 !border-slate-900 !rounded-full hover:!bg-blue-400"
       />
 
       {data.status === "critical" && (

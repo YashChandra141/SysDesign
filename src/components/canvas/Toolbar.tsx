@@ -40,24 +40,24 @@ export default function Toolbar() {
         onClick={() => {
           if (confirm("Clear entire design?")) clearCanvas();
         }}
-        className="p-2 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 transition-all"
+        className="p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 transition-all"
         title="Clear Canvas"
       >
-        <Trash2 size={18} />
+        <Trash2 size={15} />
       </button>
 
       <div className="w-px h-4 bg-slate-700" />
 
       <button
         onClick={exportDesign}
-        className="p-2 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"
+        className="p-1.5 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"
         title="Export Design"
       >
-        <Download size={18} />
+        <Download size={15} />
       </button>
 
-      <label className="p-2 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all cursor-pointer">
-        <Upload size={18} />
+      <label className="p-1.5 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all cursor-pointer">
+        <Upload size={15} />
         <input
           type="file"
           className="hidden"
